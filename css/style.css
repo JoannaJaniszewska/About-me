@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    padding: 20px;
+    color: #333;
+    margin: auto;
+    max-width:1200px;
+}
+
+.body--dark {
+    color: #dde9ea;
+    background: #a09f9f
+}
+
+.header {
+
+    background-image: url(https://i.postimg.cc/C5tBnP9q/640px-Monet-Claude-The-Beach-at-Pourville-1882.jpg);
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.header__image {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 200px;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #aaa;
+}
+
+.header__title {
+    text-align: center;
+    color: darkgreen;
+    font-size: 45px;
+    font-style: bold;
+}
+
+.button {
+    background-color: aquamarine;
+    color: #333;
+    padding: 20px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+   }
+
+.navigation {
+    background-color: #808080;
+    overflow: hidden;
+   }
+
+.navigation__link {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    style: none;    
+}
+
+.navigation__link:hover {
+    background-color: #ddd;
+    color: black;
+   }
+
+.navigation__list {
+    list-style: none;
+    list-style-position: inside;
+   }
+
+
+.section {
+    padding: 25px 0;
+}
+
+.offItalic {
+    font-style: normal;
+}
+
+.quotation {
+    font-style: italic;
+    font-weight: bold;
+    font-size:30px;
+    color: green;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.table {
+    padding: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+.table__cell {
+    border: 2px solid #ccc;
+    border-width: 0 0 1px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.table__header {
+    background-color: aquamarine;
+    color: darkgrey;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.table__row:nth-child(even) {
+    background: #eee;
+}
+
+.table__row:hover {
+    background: #ddd;
+}
+
+.container {
+    overflow-x: auto;
+}
+
+.footer {
+    background-color: whitesmoke;
+    color: #333;
+    padding: 50px;
+    text-align: center;
+    font-style: normal;
+}
