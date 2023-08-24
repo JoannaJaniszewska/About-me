@@ -1,9 +1,22 @@
-let button = document.querySelector(".button");
-let body = document.querySelector(".body");
-let themeName = document.querySelector(".themeName");
+{
+const welcome = () => {
+    console.log("Welcome to all devs checking in");
+}
 
-button.addEventListener("click", () => {
-    body.classList.toggle("body--dark");
+const toggleBackground = () => {    
+    const body = document.documentElement;
+    const themeName = document.querySelector(".themeName");
 
-    themeName.innerText = body.classList.contains("dark") ? "bright" : "dark";
-});
+        body.classList.toggle("body--dark");
+        themeName.innerText = body.classList.contains("body--dark") ? "bright" : "dark";
+    };
+ 
+const init = () => {
+        const button = document.querySelector(".button");
+        button.addEventListener("click", toggleBackground);
+
+    welcome();
+    };
+    
+    init();
+}
